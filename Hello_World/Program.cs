@@ -1,15 +1,14 @@
 ﻿using System;
 
-namespace Hello_World
+Console.Write("Who would you like to say hello to? ");
+
+string name = Console.ReadLine();
+
+if (string.IsNullOrWhiteSpace(name))
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            {
-                System.Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
-            }
-        }
-    }
+    Console.WriteLine("Fine, don't say 'hello'!");
+}
+else
+{
+    Console.WriteLine($"Hello, {name}!");
 }
